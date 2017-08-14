@@ -27,10 +27,10 @@ var getElementsByClassName = function(className) {
   return elements;
 };
 
-function classExists(classList, className) {
+var classExists = function(classList, className) {
   var key = '';
   for (key in classList) {
     if (classList[key] === className) { return true; }
   }
   return false;
-}
+};
